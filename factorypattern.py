@@ -32,9 +32,10 @@ class SimplePizzaFactory:
             self.pizza = ClamPizza()
         return self.pizza
 
-    def orderPizza(self):
-        print(self.createPizza())
-
-SimplePizzaFactory("cheese").orderPizza()
-
-
+class PizzaStore:
+    def __init__(self, factory: SimplePizzaFactory):
+        self._factory = factory
+        
+    def orderPizza(self, type: str):
+        pizza = self._factory.createPizza(type.lower())
+        return pizza
