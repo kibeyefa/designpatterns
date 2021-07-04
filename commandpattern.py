@@ -146,7 +146,7 @@ class SimpleRemoteControl:
 
 class RemoteControlTest:
 
-    classmethod
+    @classmethod
     def main(cls):
         remote = SimpleRemoteControl()
 

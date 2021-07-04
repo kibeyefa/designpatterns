@@ -30,6 +30,7 @@ class Screen:
     def down(self):
         print("Screen going down")
 
+
 class CdPlayer:
 
     def on(self):
@@ -114,7 +115,7 @@ class Amplifier:
 
 class HomeTheaterFacade:
 
-    def __init__(self, amp, tuner, dvd, cd, projector, lights, screen, popper):
+    def __init__(self, amp: Amplifier, tuner:Tuner, dvd: DVDPlayer, cd: CdPlayer, projector: Projector, lights: TheaterLights, screen: Screen, popper: PopcornPopper):
         self.amp = amp
         self.tuner = tuner
         self.dvd = dvd
