@@ -23,8 +23,8 @@ class ChocolateBoiler:
         return self.__boiled
 
     def fill(self):
-        if self.__empty == False:
-            self.__empty = True
+        if self.__empty == True:
+            self.__empty = False
             self.__boiled = False
 
     def boil(self):
