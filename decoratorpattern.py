@@ -108,7 +108,7 @@ class StarBuzzCoffe:
 
         return new_beverage
 
-    classmethod
+    @classmethod
     def addCondiment(cls, beverage: Beverage, condiment):
 
         if condiment.capitalize() == "Whip":
@@ -132,6 +132,7 @@ class StarBuzzCoffe:
 
 x = StarBuzzCoffe().orderCoffee(Espresso(), ["Whip", "Whip", "Soy"])
 print(x.cost())
+print(x.getDescription())
 
 
 
